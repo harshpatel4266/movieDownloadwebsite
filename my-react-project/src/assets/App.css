@@ -1,0 +1,112 @@
+/* html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+div .container.row.col-3{
+  width: 69%;
+}
+.card-img{
+  width: 200px;
+}
+
+.card{
+  width: 200px;
+}
+.carousel-control-prev {
+    left: -60px;
+}
+
+.carousel-control-next {
+    right: -60px;
+}
+
+ /* body{
+  overflow-x: hidden;
+  
+ } */
+
+
+
+
+ */
+
+ /* ===============================
+   GLOBAL RESET & SCROLL FIX
+   =============================== */
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: black;
+}
+
+/* Ensure router & bootstrap containers don’t lock height */
+.container,
+.container-fluid {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+/* ===============================
+   BOOTSTRAP CARD FIXES
+   =============================== */
+
+.card {
+  width: 200px;
+  background-color: #111;
+  border-radius: 10px;
+}
+
+.card-img,
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ===============================
+   CAROUSEL CONTROLS FIX
+   =============================== */
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+/* ===============================
+   PREVENT ACCIDENTAL SCROLL LOCK
+   =============================== */
+
+/* ❌ Never allow overflow hidden globally */
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ===============================
+   SAFETY: REMOVE BAD BOOTSTRAP OVERRIDES
+   =============================== */
+
+/* ❌ DO NOT override bootstrap grid like this */
+/* div .container.row.col-3 { }  <-- removed */
+
+/* ===============================
+   OPTIONAL DEBUG (REMOVE LATER)
+   =============================== */
+/*
+#root {
+  outline: 3px solid red;
+}
+*/

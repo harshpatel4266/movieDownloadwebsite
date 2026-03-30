@@ -1,0 +1,94 @@
+
+
+.cover2 {    
+  background-image: url("/image/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Register glass box */
+.container-register {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+
+  border-radius: 12px;
+  width: 500px;
+  max-width: 95%;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Labels */
+#lbl1,
+#lbl2,
+#lbl3,
+#lbl4,
+#lbl5 {
+  /* font-weight: 700; */
+  display: flex;
+  margin-bottom: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+/* Headings */
+h3 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input {
+  /* width: 100%; */
+  /* height: 40px; */
+  border-radius: 10px;
+  padding: 0 12px;
+  margin-right: 10px;
+  /* margin-bottom: 15px; */
+  border: none;
+  outline: none;
+}
+
+/* Button */
+.btn1 {
+  border-radius: 30px;
+  height: 40px;
+  width: 100%;
+  color: black;
+  background-color: whitesmoke;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Footer text */
+h5 {
+  text-align: center;
+  margin-top: 15px;
+  color: lightcyan;
+}
+
+span{
+  color:navajowhite;
+  margin-left: 15px;
+}

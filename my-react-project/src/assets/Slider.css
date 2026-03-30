@@ -1,0 +1,56 @@
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.carousel-control-next {
+  right: 40px;
+}
+
+.center-btn {
+  position: absolute;
+  bottom: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.watch-btn,
+.watchlist-btn {
+  padding: 10px 22px;
+  font-size: 17px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.watch-btn {
+  background: red;
+  color: white;
+}
+
+.watch-btn:hover {
+  background: darkred;
+  transform: scale(1.07);
+}
+
+.watchlist-btn {
+  background: rgba(255, 255, 255, 0.85);
+  color: black;
+  opacity: 0.8;
+}
+
+.watchlist-btn:hover {
+  background: whitesmoke;
+  transform: scale(1.07);
+}

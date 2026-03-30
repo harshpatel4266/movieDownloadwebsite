@@ -1,0 +1,161 @@
+/* =========================
+   PAGE BASE
+========================= */
+.movie-details-page {
+  min-height: 100vh;
+  background: #0b0b0b;
+  color: #fff;
+  padding: 30px 40px;
+  position: relative;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+.back-btn {
+  position: relative; /* important */
+  z-index: 50; /* poster se upar */
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 1px solid #444;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.back-btn:hover {
+  background: #222;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+.movie-details-container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  position: relative;
+}
+
+/* =========================
+   POSTER
+========================= */
+.poster-box {
+  width: 100%;
+}
+
+.poster-img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* =========================
+   MOVIE INFO
+========================= */
+.movie-info {
+  max-width: 900px;
+}
+
+/* TITLE + RATING */
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+
+.movie-title-main {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.rating-box {
+  background: gold;
+  color: #000;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* META INFO */
+.meta {
+  margin: 6px 0;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* DESCRIPTION */
+.description {
+  margin-top: 18px;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #ddd;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+.action-btns {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.watch-btn {
+  background: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.watch-btn:hover {
+  background: #b20710;
+}
+
+.watchlist-btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.watchlist-btn:hover {
+  background: #222;
+}
+
+/* =========================
+   TOP RIGHT INFO
+========================= */
+.top-right-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .movie-details-container {
+    grid-template-columns: 1fr;
+  }
+
+  .poster-box {
+    max-width: 260px;
+  }
+
+  .movie-title-main {
+    font-size: 28px;
+  }
+}

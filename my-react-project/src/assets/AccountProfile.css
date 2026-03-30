@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.profile-page {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+}
+
+.profile-card {
+  position: relative;
+  width: 900px;
+  max-width: 95%;
+  background: #11161c;
+  border-radius: 12px;
+  padding: 40px;
+  color: #fff;
+  z-index: 1;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #9aa4af;
+  margin-bottom: 32px;
+}
+
+.profile-content {
+  display: flex;
+  gap: 40px;
+}
+
+/* Avatar */
+.avatar-section {
+  flex-shrink: 0;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.camera-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #1f2933;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Form */
+.profile-form {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.profile-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #cfd6dd;
+}
+
+.profile-form input,
+.profile-form select,
+.profile-form textarea {
+  margin-top: 6px;
+  padding: 12px;
+  background: #0b0f14;
+  border: 1px solid #1f2933;
+  border-radius: 6px;
+  color: white;
+}
+
+.profile-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.profile-form input::placeholder,
+.profile-form textarea::placeholder {
+  color: #6b7280;
+}
+
+/* Actions */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.cancel-btn {
+  background: transparent;
+  border: none;
+  color: #9aa4af;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: #e50914;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #f6121d;
+}

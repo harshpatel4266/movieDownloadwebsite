@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* PAGE WRAPPER */
+.movie-wrapper {
+  position: relative;
+  margin: 40px;
+  margin-top: 20px; /* 🔥 navbar height ke according */
+  background: #0b0b0b;
+  border-radius: 14px;
+  padding: 35px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  z-index: 1;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+
+  background: rgba(247, 9, 9, 0.65);
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.back-btn:hover {
+  background: rgba(232, 6, 6, 0.85);
+}
+
+/* POSTER */
+.poster-img {
+  display: block;
+  width: 300px;
+  height: 420px;
+  margin-top: 15px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* MAIN LAYOUT */
+.movie-layout {
+  display: flex;
+  gap: 40px;
+}
+.poster-box {
+  flex-shrink: 0;
+}
+.poster-inner {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden; /* 👈 button image ke bahar nahi niklega */
+}
+.poster-img {
+  display: block;
+  width: 300px;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* INFO */
+.movie-info {
+  flex: 1;
+  color: rgb;
+}
+
+.movie-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* DESCRIPTION */
+.description {
+  margin-top: 16px;
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+/* META INFO */
+.meta {
+  margin-top: 16px;
+  color: #1c59d3;
+}
+
+.meta p {
+  margin: 6px 0;
+}
+
+.meta b {
+  color: #1c889b97;
+}
+
+.movieinfo {
+  margin-right: 10px;
+}
+/* SECTION TITLES */
+.section-title {
+  margin-top: 32px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #facc15; /* gold */
+}
+
+/* DOWNLOAD BUTTONS */
+.downloads {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #e50914, #b20710);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.download-btn:hover {
+  opacity: 0.9;
+}
+
+/* ERROR */
+.error-text {
+  color: #f87171;
+  margin-top: 8px;
+}
+
+/* SCREENSHOTS */
+.screenshots {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.screenshots img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshots img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .poster-img {
+    width: 260px;
+    height: auto;
+  }
+
+  .back-btn {
+    top: 8px;
+    left: 8px;
+    font-size: 13px;
+  }
+}
